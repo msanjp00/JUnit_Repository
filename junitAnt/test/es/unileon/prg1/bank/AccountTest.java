@@ -62,7 +62,8 @@ public class AccountTest {
 
 	@Test
 	public void testWithdraw() {
-		fail("Not implemented yet");
+		johnAccount.withdraw(25);
+		assertEquals(975, johnAccount.getBalance());
 	}
 	
 	@Test

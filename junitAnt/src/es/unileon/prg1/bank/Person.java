@@ -3,10 +3,10 @@ package es.unileon.prg1.bank;
 class Person{
 
 	private String name;
-
 	Person(String name){
-		this.name = name;
+			this.name = name;
 	}
+	
 	Person(Person another){
 			this.name = another.getName(); //añadido "otro" para getname		
 	}
