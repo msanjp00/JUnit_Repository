@@ -6,17 +6,17 @@ class Account{
 	private int balance;
 
 	Account (Account another){
-		this.owner = another.getOwner();
+		this.owner = new Person(another.getOwner()); //modificado
 		this.balance = another.getBalance();
 	}
 	
     Account(Person owner){
-    	this.owner = owner;
+    	this.owner = new Person(owner); //modificado
    		this.balance = 0;
     }
 
     Account(Person owner, int balance){
-    	this.owner = owner;
+    	this.owner = new Person(owner); //modificado
    		this.balance = balance;
     }
     
@@ -25,7 +25,7 @@ class Account{
     }
     
     Person getOwner(){
-    	return this.owner;
+    	return new Person(this.owner); //modificado
     }
     
     void deposit (int amount){
