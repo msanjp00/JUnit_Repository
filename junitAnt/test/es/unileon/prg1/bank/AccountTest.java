@@ -60,6 +60,8 @@ public class AccountTest {
 		assertEquals(1100, johnAccount.getBalance());
 	}
 
+	//hay que añadir un test para withdraw, "quitando" balance de la cuenta de jhon.
+	
 	@Test
 	public void testWithdraw() {
 		johnAccount.withdraw(25);

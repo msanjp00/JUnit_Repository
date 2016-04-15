@@ -7,8 +7,12 @@ class Person{
 			this.name = name;
 	}
 	
+	//Necesario añadir para que el parámetro another recoja un nombre
+	//como copia.
+	//añadido:
 	Person(Person another){
-			this.name = another.getName(); //añadido "otro" para getname		
+			this.name = another.getName(); 
+			
 	}
 
 	String getName(){
